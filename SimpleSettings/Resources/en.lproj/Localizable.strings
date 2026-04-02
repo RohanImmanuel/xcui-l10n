@@ -1,0 +1,12 @@
+"nav.title"              = "Settings";
+"section.appearance"     = "Appearance";
+"section.notifications"  = "Notifications";
+"section.about"          = "About";
+"toggle.dark_mode"       = "Dark Mode";
+"toggle.notifications"   = "Enable Notifications";
+"picker.text_size"       = "Text Size";
+"text_size.small"        = "Small";
+"text_size.medium"       = "Medium";
+"text_size.large"        = "Large";
+"label.version"          = "Version";
+"label.build"            = "Build";
