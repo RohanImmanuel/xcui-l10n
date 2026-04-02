@@ -1,0 +1,12 @@
+"nav.title"              = "Ajustes";
+"section.appearance"     = "Apariencia";
+"section.notifications"  = "Notificaciones";
+"section.about"          = "Acerca de";
+"toggle.dark_mode"       = "Modo oscuro";
+"toggle.notifications"   = "Activar notificaciones";
+"picker.text_size"       = "Tamaño del texto";
+"text_size.small"        = "Pequeño";
+"text_size.medium"       = "Mediano";
+"text_size.large"        = "Grande";
+"label.version"          = "Versión";
+"label.build"            = "Compilación";
