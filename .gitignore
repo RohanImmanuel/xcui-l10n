@@ -21,6 +21,8 @@ build/
 .build/
 .swiftpm/
 
+SimpleSettings/Info.plist
+
 Pods/
 Podfile.lock
 
