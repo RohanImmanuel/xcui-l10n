@@ -1,4 +1,4 @@
-# SimpleSettings
+# xcui-l10n
 
 A minimal SwiftUI settings screen built for XCUITest localization testing. The app itself is intentionally small with only three sections, a couple of toggles, a picker. This is so the tests stay focused on the one thing we care about: verifying that every string on screen renders in the right language.
 
