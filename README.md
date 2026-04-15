@@ -18,7 +18,7 @@ graph TD
     M -->|reads| BP[Bundle / Info.plist]
 ```
 
-`AppSettings` is the only model object. It owns three user preferences and reads the version/build strings from `Info.plist` at init time. `SettingsView` is a pure consumer — it never writes to `UserDefaults` directly, everything goes through the model.
+`AppSettings` is the only model object. It owns three user preferences and reads the version/build strings from `Info.plist` at init time. `SettingsView` is a pure consumer, it never writes to `UserDefaults` directly, everything goes through the model.
 
 ---
 
@@ -90,12 +90,12 @@ xcodebuild test \
 
 ```mermaid
 flowchart LR
-    A["1 — add\nxx.lproj/Localizable.strings"] --> B["2 — add xx to\nCFBundleLocalizations\nin project.yml"]
-    B --> C["3 — xcodegen generate"]
-    C --> D["4 — add subclass\nto LocalizationTests.swift"]
+    A["1: add\nxx.lproj/Localizable.strings"] --> B["2: add xx to\nCFBundleLocalizations\nin project.yml"]
+    B --> C["3: xcodegen generate"]
+    C --> D["4: add subclass\nto LocalizationTests.swift"]
 ```
 
-**Step 4** is a small subclass — override `locale` and `region`, then write the expected translated strings:
+**Step 4** is a small subclass, override `locale` and `region`, then write the expected translated strings:
 
 ```swift
 class SettingsLocalizationGermanTests: LocalizationTestCase {
