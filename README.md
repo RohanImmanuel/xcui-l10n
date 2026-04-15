@@ -10,10 +10,10 @@ The app has support for English, Spanish and French built in, but i have kept th
 
 ```mermaid
 graph TD
-    App[SimpleSettingsApp] -->|@StateObject| M[AppSettings]
-    App -->|.environmentObject| CV[ContentView]
+    App[SimpleSettingsApp] -->|"@StateObject"| M[AppSettings]
+    App -->|".environmentObject"| CV[ContentView]
     CV --> SV[SettingsView]
-    SV -->|@EnvironmentObject| M
+    SV -->|"@EnvironmentObject"| M
     M -->|read/write| UD[(UserDefaults)]
     M -->|reads| BP[Bundle / Info.plist]
 ```
