@@ -88,14 +88,10 @@ xcodebuild test \
 
 ## Adding a new locale
 
-```mermaid
-flowchart LR
-    A["1: add\nxx.lproj/Localizable.strings"] --> B["2: add xx to\nCFBundleLocalizations\nin project.yml"]
-    B --> C["3: xcodegen generate"]
-    C --> D["4: add subclass\nto LocalizationTests.swift"]
-```
-
-**Step 4** is a small subclass, override `locale` and `region`, then write the expected translated strings:
+1. Add `xx.lproj/Localizable.strings` with the translated keys
+2. Add `xx` to `CFBundleLocalizations` in `project.yml`
+3. Run `xcodegen generate`
+4. Add a subclass to `LocalizationTests.swift`, override `locale` and `region`, then write the expected translated strings:
 
 ```swift
 class SettingsLocalizationGermanTests: LocalizationTestCase {
